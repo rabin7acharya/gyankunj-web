@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyankunj</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar bg-white fixed z-10 left-0 right-0 top-0">
+      <div
+        class="container mx-auto px-8 flex justify-between items-center py-3"
+      >
+        <a
+          href="./index.html"
+          class="text-2xl font-bold flex items-center gap-1"
+        >
+          <img src="./assets/Gyankunj.png" class="h-12" alt="" />
+          <h2 class="text-2xl font-bold text-indigo-600">GSBS</h2>
+        </a>
+        <ul class="nav-links hidden lg:flex">
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Home</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Academics</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >News</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Gallery</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-ctas gap-2 font-semibold hidden lg:flex">
+          <a
+            href="./contact.html"
+            class="px-6 py-3 text-white bg-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >Contact</a
+          >
+        </div>
+
+        <button
+          id="hamburgerButton"
+          class="ham-btn flex flex-col justify-between items-end group gap-[4px] lg:hidden"
+        >
+          <!-- hamburger icon using tailwind  -->
+          <div
+            class="line-one w-8 h-1 bg-stone-400 rounded-full group-hover:bg-black"
+          ></div>
+          <div
+            class="line-two w-8 h-1 bg-stone-400 rounded-full group-hover:bg-black"
+          ></div>
+          <div
+            class="line-three w-4 h-1 bg-stone-400 rounded-full group-hover:bg-black"
+          ></div>
+        </button>
+      </div>
+      <div
+        class="ham-menu absolute hidden h-screen bg-white container mx-auto px-8 py-16 flex flex-col gap-2"
+      >
+        <ul class="ham-links flex flex-col gap-5 text-stone-400">
+          <li>
+            <a href="" class="text-3xl font-semibold">Courses</a>
+          </li>
+          <li>
+            <a href="" class="text-3xl font-semibold">About</a>
+          </li>
+          <li>
+            <a href="" class="text-3xl font-semibold">Contact</a>
+          </li>
+          <li>
+            <a href="" class="text-3xl font-semibold">Login</a>
+          </li>
+          <li>
+            <a href="" class="text-3xl font-semibold">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="blogs-section pt-32 pb-16">
+      <div
+        class="content container mx-auto flex flex-col items-center px-8 lg:px-40 xl:px-64 relative"
+      >
+        <h1 class="text-4xl text-center font-bold mb-8">
+          10 Best ways to enhance your english speaking
+        </h1>
+        <div
+          class="blog-cover w-full h-96 rounded-lg bg-cover bg-[url('https://st3.depositphotos.com/1004221/13859/i/450/depositphotos_138595846-stock-photo-technical-repairs-motherboard-in-service.jpg')]"
+        ></div>
+        <div class="info w-full flex gap-4 justify-between flex-wrap my-6">
+          <p class="text-stone-800 font-bold flex items-center gap-2">
+            <span class="text-stone-500 font-normal">Written by:</span> Michael
+            Chhetri (Vice Principal)
+          </p>
+          <p class="text-stone-800 font-bold flex items-center gap-2">
+            <span class="text-stone-500 font-normal">Published on:</span> Jan
+            01, 2024
+          </p>
+        </div>
+        <div
+          class="blog-body leading-relaxed text-stone-800 p-8 bg-blue-50 rounded-lg flex flex-col gap-6"
+        >
+          <p class="first-letter:text-5xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eum
+            perspiciatis suscipit, pariatur quaerat, optio aliquam unde natus
+            facilis impedit quae dignissimos sint iste quisquam eius temporibus.
+            Corporis, aspernatur temporibus.
+          </p>
+          <p>
+            Improving your English speaking skills is a rewarding journey that
+            opens up new opportunities. Whether you're a beginner or looking to
+            refine your fluency, here are ten effective ways to enhance your
+            spoken English:
+          </p>
+
+          <ol class="flex flex-col gap-6">
+            <li>
+              <strong>Immersive Learning:</strong> <br />
+              Surround yourself with English content through movies, TV shows,
+              podcasts, and music. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Totam, provident.
+            </li>
+
+            <li>
+              <strong>Language Exchange:</strong> <br />
+              Connect with native speakers or language exchange partners to
+              practice conversational English. Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Non dolorem temporibus ullam
+              distinctio excepturi dicta quod! Quis ab modi qui.
+            </li>
+
+            <li>
+              <strong>Online Courses:</strong> <br />
+              Enroll in reputable online courses focused on spoken English and
+              pronunciation. Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Ipsum at consequatur expedita illum voluptatem corrupti
+              minus quisquam eaque, rerum veritatis!
+            </li>
+
+            <li>
+              <strong>Read Out Loud:</strong> <br />
+              Read books, articles, or news aloud to improve pronunciation and
+              fluency. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Pariatur facilis est dignissimos aspernatur, modi rerum aut
+              laudantium fugit ad sapiente libero animi corporis dicta enim
+              voluptatem magnam necessitatibus eveniet? Iure.
+            </li>
+
+            <li>
+              <strong>Use Language Apps:</strong> <br />
+              Utilize language learning apps with speaking exercises and
+              interactive lessons. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Eius necessitatibus quisquam sint.
+            </li>
+
+            <li>
+              <strong>Join Speaking Clubs:</strong> <br />
+              Participate in local or online speaking clubs where you can engage
+              in discussions and debates. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Culpa placeat corporis repellat corrupti aut, at
+              quibusdam dignissimos totam harum nam aspernatur qui rem aliquam,
+              sunt ducimus ipsa aperiam, veniam ut.
+            </li>
+
+            <li>
+              <strong>Practice Regularly:</strong> <br />
+              Consistency is key; set aside time each day for dedicated English
+              speaking practice. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Sequi fugit iusto eveniet temporibus delectus
+              facere nisi odio culpa, rerum, quod suscipit? Placeat expedita,
+              tempore hic voluptatibus vero porro culpa accusamus.
+            </li>
+
+            <li>
+              <strong>Record Yourself:</strong> <br />
+              Record your speech to identify areas for improvement and track
+              your progress. Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Nesciunt est necessitatibus in repudiandae alias possimus
+              quasi nemo quaerat magni animi.
+            </li>
+
+            <li>
+              <strong>Expand Vocabulary:</strong> <br />
+              Learn and incorporate new words into your daily conversations for
+              a richer language Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Veritatis odit distinctio molestias nemo
+              eligendi magni similique, voluptate sunt numquam facere quis
+              delectus dolores nihil blanditiis ducimus ipsam aliquid saepe
+              sapiente! experience.
+            </li>
+
+            <li>
+              <strong>Travel and Immerse:</strong> <br />
+              If possible, travel to English-speaking countries for an immersive
+              experience and cultural exchange. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Aut commodi magni qui at architecto
+              eligendi vitae ipsam debitis facere eveniet.
+            </li>
+          </ol>
+
+          <p>
+            Remember, language learning is a gradual process, and with
+            commitment and regular practice, you'll see significant improvements
+            in your English speaking skills.
+          </p>
+
+          <p>Happy learning!</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section bg-blue-50 mt-16">
+      <div class="container mx-auto px-8 grid grid-cols-6 gap-24 py-24">
+        <div
+          class="about w-fit col-span-5 lg:col-span-3 lg:w-9/12 flex flex-col gap-7"
+        >
+          <a
+            href="./index.html"
+            class="text-2xl font-bold flex items-center gap-2"
+          >
+            <img src="./assets/Gyankunj.png" class="h-12" alt="" />
+            <h2 class="text-2xl font-bold text-indigo-600">GSBS</h2>
+          </a>
+
+          <p class="text-stone-500">
+            By submitting your email, you will receive latest news and
+            announcement that our platform offers in the future
+          </p>
+
+          <div
+            class="newsletter flex rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent overflow-hidden"
+          >
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              class="bg-white px-4 py-3 w-full focus:outline-none"
+            />
+            <button
+              class="px-6 py-3 text-white font-semibold bg-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Menu</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Courses</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">About Us</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Contact</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./signup.html">Login / Register</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Others</h3>
+          <ul class="links flex flex-col justify-end gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Course Guide</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">How it works?</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Tutors</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Testimonials</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Help?</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Categories</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Web Development</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Animation</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Video Editing</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Design & Research</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Digital Marketing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-8 pb-16">
+        <div
+          class="social-media w-full grid gap-8 grid-cols-4 px-8 py-6 bg-indigo-600 rounded-lg flex justify-between items-center"
+        >
+          <h4 class="text-white font-semibold col-span-4 lg:col-span-3">
+            Copyright © Gyankung Secondary School
+          </h4>
+
+          <div
+            class="social-icons col-span-4 lg:col-span-1 flex lg:justify-end gap-3"
+          >
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
