@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyankunj</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar bg-white fixed z-10 left-0 right-0 top-0">
+      <div
+        class="container mx-auto px-8 flex justify-between items-center py-3"
+      >
+        <a
+          href="./index.html"
+          class="text-2xl font-bold flex items-center gap-1"
+        >
+          <img src="./assets/Gyankunj.png" class="h-12" alt="" />
+          <h2 class="text-2xl font-bold text-indigo-600">GSBS</h2>
+        </a>
+        <ul class="nav-links hidden lg:flex">
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Home</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Academics</a
+            >
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >News</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Gallery</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-ctas gap-2 font-semibold hidden lg:flex">
+          <a
+            href="./contact.html"
+            class="px-6 py-3 text-white bg-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >Contact</a
+          >
+        </div>
+
+        <button
+          id="hamburgerButton"
+          class="ham-btn flex flex-col justify-between items-end group gap-[4px] lg:hidden"
+        >
+          <!-- hamburger icon using tailwind  -->
+          <div
+            class="line-one w-8 h-1 bg-stone-400 rounded-full group-hover:bg-black"
+          ></div>
+          <div
+            class="line-two w-8 h-1 bg-stone-400 rounded-full group-hover:bg-black"
+          ></div>
+          <div
+            class="line-three w-4 h-1 bg-stone-400 rounded-full group-hover:bg-black"
+          ></div>
+        </button>
+      </div>
+      <div
+        class="ham-menu absolute hidden h-screen bg-white container mx-auto px-8 py-16 flex flex-col gap-2"
+      >
+        <ul class="ham-links flex flex-col gap-5 text-stone-400">
+          <li>
+            <a href="" class="text-3xl font-semibold">Courses</a>
+          </li>
+          <li>
+            <a href="" class="text-3xl font-semibold">About</a>
+          </li>
+          <li>
+            <a href="" class="text-3xl font-semibold">Contact</a>
+          </li>
+          <li>
+            <a href="" class="text-3xl font-semibold">Login</a>
+          </li>
+          <li>
+            <a href="" class="text-3xl font-semibold">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="event-section pt-32 pb-16">
+      <div class="container mx-auto px-8 lg:px-40 xl:px-64">
+        <h1 class="text-3xl md:text-4xl text-center font-bold mb-12">
+          Upcoming <span class="text-indigo-600">Events</span>
+        </h1>
+        <div class="event-list flex flex-col items-center gap-8">
+          <div
+            class="event-card grid grid-cols-1 md:grid-cols-3 rounded-lg overflow-hidden shadow-2xl bg-white"
+          >
+            <div class="event-img col-span-1">
+              <img
+                src="https://www.ntnc.org.np/sites/default/files/styles/slider_1920x1024/public/default_images/default-cover_0.jpg?itok=14XRQdhm"
+                class="h-full w-full object-cover"
+                alt=""
+              />
+            </div>
+            <div class="event-info p-8 col-span-2 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold">Lorem ipsum dolor sit.</h3>
+              <p class="text-stone-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                ex praesentium inventore dolore architecto aperiam nihil odio
+                dolor. Nihil, facilis.
+              </p>
+              <hr class="my-4" />
+              <div
+                class="info-grid lg:w-10/12 grid gap-3 grid-cols-1 md:grid-cols-2"
+              >
+                <div class="date flex items-center gap-3">
+                  <i class="far fa-calendar-alt text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+                <div class="location row-span-3 flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-indigo-600 mt-2"></i>
+                  <span class="text-stone-500"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </div>
+                <div class="time flex items-center gap-3">
+                  <i class="fa-regular fa-clock text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="event-card grid grid-cols-1 md:grid-cols-3 rounded-lg overflow-hidden shadow-2xl bg-white"
+          >
+            <div class="event-img col-span-1">
+              <img
+                src="https://www.ntnc.org.np/sites/default/files/styles/slider_1920x1024/public/default_images/default-cover_0.jpg?itok=14XRQdhm"
+                class="h-full w-full object-cover"
+                alt=""
+              />
+            </div>
+            <div class="event-info p-8 col-span-2 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold">Lorem ipsum dolor sit.</h3>
+              <p class="text-stone-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                ex praesentium inventore dolore architecto aperiam nihil odio
+                dolor. Nihil, facilis.
+              </p>
+              <hr class="my-4" />
+              <div
+                class="info-grid lg:w-10/12 grid gap-3 grid-cols-1 md:grid-cols-2"
+              >
+                <div class="date flex items-center gap-3">
+                  <i class="far fa-calendar-alt text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+                <div class="location row-span-3 flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-indigo-600 mt-2"></i>
+                  <span class="text-stone-500"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </div>
+                <div class="time flex items-center gap-3">
+                  <i class="fa-regular fa-clock text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="event-card grid grid-cols-1 md:grid-cols-3 rounded-lg overflow-hidden shadow-2xl bg-white"
+          >
+            <div class="event-img col-span-1">
+              <img
+                src="https://www.ntnc.org.np/sites/default/files/styles/slider_1920x1024/public/default_images/default-cover_0.jpg?itok=14XRQdhm"
+                class="h-full w-full object-cover"
+                alt=""
+              />
+            </div>
+            <div class="event-info p-8 col-span-2 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold">Lorem ipsum dolor sit.</h3>
+              <p class="text-stone-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                ex praesentium inventore dolore architecto aperiam nihil odio
+                dolor. Nihil, facilis.
+              </p>
+              <hr class="my-4" />
+              <div
+                class="info-grid lg:w-10/12 grid gap-3 grid-cols-1 md:grid-cols-2"
+              >
+                <div class="date flex items-center gap-3">
+                  <i class="far fa-calendar-alt text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+                <div class="location row-span-3 flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-indigo-600 mt-2"></i>
+                  <span class="text-stone-500"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </div>
+                <div class="time flex items-center gap-3">
+                  <i class="fa-regular fa-clock text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination flex gap-2 flex-wrap">
+            <a
+              href="./programs.html"
+              class="h-12 w-12 flex items-center justify-center bg-indigo-600 text-white font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
+              >1</a
+            >
+            <a
+              href="./programs.html"
+              class="h-12 w-12 flex items-center justify-center text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
+              >2</a
+            >
+            <a
+              href="./programs.html"
+              class="h-12 w-12 flex items-center justify-center text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
+              >3</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="past-event-section py-16">
+      <div class="container mx-auto px-8 lg:px-40 xl:px-64">
+        <h1 class="text-3xl md:text-4xl text-center font-bold mb-12">
+          Past <span class="text-indigo-600">Events</span>
+        </h1>
+        <div class="event-grid grid gap-8 grid-cols-1 lg:grid-cols-2">
+          <div
+            class="event-card rounded-lg overflow-hidden shadow-2xl bg-white"
+          >
+            <div class="event-info p-8 col-span-2 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold">Lorem ipsum dolor sit.</h3>
+
+              <hr class="my-4" />
+              <div class="info-grid flex flex-col gap-3">
+                <div class="date flex items-center gap-3">
+                  <i class="far fa-calendar-alt text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+                <div class="location row-span-3 flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-indigo-600 mt-2"></i>
+                  <span class="text-stone-500"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </div>
+                <div class="time flex items-center gap-3">
+                  <i class="fa-regular fa-clock text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="event-card rounded-lg overflow-hidden shadow-2xl bg-white"
+          >
+            <div class="event-info p-8 col-span-2 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold">Lorem ipsum dolor sit.</h3>
+
+              <hr class="my-4" />
+              <div class="info-grid flex flex-col gap-3">
+                <div class="date flex items-center gap-3">
+                  <i class="far fa-calendar-alt text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+                <div class="location row-span-3 flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-indigo-600 mt-2"></i>
+                  <span class="text-stone-500"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </div>
+                <div class="time flex items-center gap-3">
+                  <i class="fa-regular fa-clock text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="event-card rounded-lg overflow-hidden shadow-2xl bg-white"
+          >
+            <div class="event-info p-8 col-span-2 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold">Lorem ipsum dolor sit.</h3>
+
+              <hr class="my-4" />
+              <div class="info-grid flex flex-col gap-3">
+                <div class="date flex items-center gap-3">
+                  <i class="far fa-calendar-alt text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+                <div class="location row-span-3 flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-indigo-600 mt-2"></i>
+                  <span class="text-stone-500"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </div>
+                <div class="time flex items-center gap-3">
+                  <i class="fa-regular fa-clock text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="event-card rounded-lg overflow-hidden shadow-2xl bg-white"
+          >
+            <div class="event-info p-8 col-span-2 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold">Lorem ipsum dolor sit.</h3>
+
+              <hr class="my-4" />
+              <div class="info-grid flex flex-col gap-3">
+                <div class="date flex items-center gap-3">
+                  <i class="far fa-calendar-alt text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+                <div class="location row-span-3 flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-indigo-600 mt-2"></i>
+                  <span class="text-stone-500"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </div>
+                <div class="time flex items-center gap-3">
+                  <i class="fa-regular fa-clock text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="event-card rounded-lg overflow-hidden shadow-2xl bg-white"
+          >
+            <div class="event-info p-8 col-span-2 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold">Lorem ipsum dolor sit.</h3>
+
+              <hr class="my-4" />
+              <div class="info-grid flex flex-col gap-3">
+                <div class="date flex items-center gap-3">
+                  <i class="far fa-calendar-alt text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+                <div class="location row-span-3 flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-indigo-600 mt-2"></i>
+                  <span class="text-stone-500"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </div>
+                <div class="time flex items-center gap-3">
+                  <i class="fa-regular fa-clock text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="event-card rounded-lg overflow-hidden shadow-2xl bg-white"
+          >
+            <div class="event-info p-8 col-span-2 flex flex-col gap-4">
+              <h3 class="text-2xl font-bold">Lorem ipsum dolor sit.</h3>
+
+              <hr class="my-4" />
+              <div class="info-grid flex flex-col gap-3">
+                <div class="date flex items-center gap-3">
+                  <i class="far fa-calendar-alt text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+                <div class="location row-span-3 flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-indigo-600 mt-2"></i>
+                  <span class="text-stone-500"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </span>
+                </div>
+                <div class="time flex items-center gap-3">
+                  <i class="fa-regular fa-clock text-indigo-600"></i>
+                  <span class="text-stone-500">Jan 01, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination flex justify-center gap-2 flex-wrap mt-12">
+          <a
+            href="./programs.html"
+            class="h-12 w-12 flex items-center justify-center bg-indigo-600 text-white font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
+            >1</a
+          >
+          <a
+            href="./programs.html"
+            class="h-12 w-12 flex items-center justify-center text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
+            >2</a
+          >
+          <a
+            href="./programs.html"
+            class="h-12 w-12 flex items-center justify-center text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
+            >3</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section bg-blue-50 mt-16">
+      <div class="container mx-auto px-8 grid grid-cols-6 gap-24 py-24">
+        <div
+          class="about w-fit col-span-5 lg:col-span-3 lg:w-9/12 flex flex-col gap-7"
+        >
+          <a
+            href="./index.html"
+            class="text-2xl font-bold flex items-center gap-2"
+          >
+            <img src="./assets/Gyankunj.png" class="h-12" alt="" />
+            <h2 class="text-2xl font-bold text-indigo-600">GSBS</h2>
+          </a>
+
+          <p class="text-stone-500">
+            By submitting your email, you will receive latest news and
+            announcement that our platform offers in the future
+          </p>
+
+          <div
+            class="newsletter flex rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent overflow-hidden"
+          >
+            <input
+              type="text"
+              placeholder="Enter your email address"
+              class="bg-white px-4 py-3 w-full focus:outline-none"
+            />
+            <button
+              class="px-6 py-3 text-white font-semibold bg-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Menu</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Courses</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">About Us</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Contact</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./signup.html">Login / Register</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Others</h3>
+          <ul class="links flex flex-col justify-end gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Course Guide</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">How it works?</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Tutors</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Testimonials</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Help?</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Categories</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Web Development</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Animation</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Video Editing</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Design & Research</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Digital Marketing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-8 pb-16">
+        <div
+          class="social-media w-full grid gap-8 grid-cols-4 px-8 py-6 bg-indigo-600 rounded-lg flex justify-between items-center"
+        >
+          <h4 class="text-white font-semibold col-span-4 lg:col-span-3">
+            Copyright © Gyankung Secondary School
+          </h4>
+
+          <div
+            class="social-icons col-span-4 lg:col-span-1 flex lg:justify-end gap-3"
+          >
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
