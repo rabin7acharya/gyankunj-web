@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <nav class="nav-bar bg-white fixed z-10 left-0 right-0 top-0">
+    <nav class="nav-bar bg-white fixed z-20 left-0 right-0 top-0">
       <div
         class="container mx-auto px-8 lg:px-40 xl:px-64 flex justify-between items-center py-3"
       >
@@ -114,9 +114,11 @@
     </nav>
 
     <section class="hero-section bg-indigo-700 overflow-hidden relative z-[0]">
-      <div class="container mx-auto flex flex-wrap items-stretch relative">
+      <div
+        class="container mx-auto px-8 lg:px-40 xl:px-64 flex flex-wrap items-stretch relative overflow-hidden border-3 border-red-400"
+      >
         <div
-          class="fx-left info-left w-100 lg:w-4/12 xl:w-4/12 flex p-8 py-16 lg:py-16 xl:py-24 z-[1] bg-indigo-700 pt-16"
+          class="fx-left info-left w-100 lg:w-6/12 flex py-16 lg:py-16 xl:py-24 z-[1] bg-indigo-700 pt-16"
         >
           <div
             class="w-100 mt-24 lg:mt-0 flex flex-col justify-center w-100 gap-8 bg-indigo-700"
@@ -179,7 +181,47 @@
       </div>
     </section>
 
-    <section class="event-section pt-24 pb-16">
+    <section class="voice-section pt-24 pb-16">
+      <div class="container mx-auto px-8 lg:px-32 xl:px-64">
+        <div class="voice grid grid-cols-6 gap-8 w-full">
+          <div
+            class="img col-span-6 lg:col-span-2 h-[32rem] md:h-[48rem] lg:h-full rounded-lg bg-stone-300 bg-[url('https://i.pinimg.com/564x/88/66/46/886646f6b1bedc540326e3cf6d517955.jpg')] bg-cover bg-center flex items-end"
+          >
+            <div
+              class="persona w-full rounded-md flex flex-col bg-white m-4 p-6"
+            >
+              <h4 class="text-xl font-bold text-indigo-600">
+                Mr. Prithvi Singh
+              </h4>
+              <p class="text-stone-500">Principal, Co-Founder</p>
+            </div>
+          </div>
+          <div
+            class="voice-info col-span-6 lg:col-span-4 bg-blue-50 rounded-lg p-10"
+          >
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">
+              Voice of <span class="text-indigo-600">Principal</span>
+            </h1>
+            <p class="text-stone-500 leading-loose">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+              iste ad qui dolore quam placeat quidem! Numquam quam laborum animi
+              quod, consequuntur nulla temporibus. Voluptate sequi ad non
+              consequuntur vel doloribus voluptates soluta. In itaque magni
+              consequuntur eveniet possimus repudiandae!
+            </p>
+            <p class="text-stone-500 leading-loose">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+              iste ad qui dolore quam placeat quidem! Numquam quam laborum animi
+              quod, consequuntur nulla temporibus. Voluptate sequi ad non
+              consequuntur vel doloribus voluptates soluta. In itaque magni
+              consequuntur eveniet possimus repudiandae!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-section py-16">
       <div class="container mx-auto px-8 lg:px-40 xl:px-64">
         <h1 class="text-3xl md:text-4xl text-center font-bold mb-12">
           Upcoming <span class="text-indigo-600">Events</span>
@@ -1099,7 +1141,9 @@
           Our <span class="text-indigo-600">Articles</span>
         </h1>
 
-        <div class="blog-grid grid grid-cols-1 lg:grid-cols-2 gap-8 z-[0]">
+        <div
+          class="blog-grid grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-8 z-[0]"
+        >
           <div class="blog-item flex flex-col gap-4">
             <div class="img-wrapper rounded-lg w-full border overflow-hidden">
               <img
@@ -1339,6 +1383,78 @@
             <div class="progress h-2 w-2 rounded-full bg-stone-300"></div>
             <div class="progress h-2 w-2 rounded-full bg-stone-300"></div>
           </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section py-16">
+      <div
+        class="container mx-auto px-8 lg:px-40 xl:px-64 grid grid-cols-1 lg:grid-cols-2 gap-16"
+      >
+        <div class="contact-info left w-full flex flex-col gap-6">
+          <form class="flex flex-col gap-6 text-stone-800">
+            <input
+              type="text"
+              placeholder="Name"
+              class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+            <input
+              type="text"
+              placeholder="Subject"
+              class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+
+            <textarea
+              type="text"
+              placeholder="Message"
+              rows="4"
+              class="bg-blue-50 rounded-[2rem] py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            ></textarea>
+            <input
+              type="submit"
+              class="bg-indigo-600 rounded-full py-5 px-6 mt-4 text-white font-semibold cursor-pointer hover:bg-indigo-700 transition-colors duration-400"
+              value="Submit"
+            />
+          </form>
+        </div>
+        <div class="contact-info right rounded-lg flex flex-col gap-12">
+          <div class="info-item flex flex-col gap-4">
+            <h5 class="text-md text-stone-500">Location</h5>
+            <div class="w-full h-px bg-stone-200"></div>
+            <h3 class="text-2xl text-black font-semibold">
+              Location I, Street No. 734, <br />
+              USA, Texas
+            </h3>
+          </div>
+          <div class="info-item flex flex-col gap-4">
+            <h5 class="text-md text-stone-500">Working Hours</h5>
+            <div class="w-full h-px bg-stone-200"></div>
+            <h3 class="text-2xl text-black font-semibold">
+              Monday to Friday, <br />
+              9:00 AM to 8:00 PM
+            </h3>
+            <h5 class="text-md text-stone-500">
+              Our Support team is available 24 hours
+            </h5>
+          </div>
+          <div class="info-item flex flex-col gap-4">
+            <h5 class="text-md text-stone-500">Contact Info</h5>
+            <div class="w-full h-px bg-stone-200"></div>
+            <h3 class="text-2xl text-black font-semibold">
+              +100 XXX-XXX-XXX <br />
+            </h3>
+            <a
+              class="text-md text-stone-500 cursor-pointer hover:text-zinc-900"
+              target="_blank"
+            >
+              Say Hi at support.xpressphonefix@gmail.com
+            </a>
+          </div>
         </div>
       </div>
     </section>
