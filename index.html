@@ -366,7 +366,7 @@
 
           <a
             href="./events.html"
-            class="px-6 py-3 flex items-center justify-center w-fit text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
+            class="px-6 py-3 mt-4 flex items-center justify-center w-fit text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
             >Browse All</a
           >
         </div>
@@ -1008,7 +1008,9 @@
     </section>
 
     <section class="calender-section py-16">
-      <div class="container mx-auto px-8 lg:px-40 xl:px-64 gap-8">
+      <div
+        class="container mx-auto flex flex-col items-center px-8 lg:px-40 xl:px-64"
+      >
         <h1 class="text-3xl md:text-4xl text-center font-bold mb-12">
           Our <span class="text-indigo-600">Calendar</span>
         </h1>
@@ -1158,12 +1160,12 @@
               </div>
             </div>
           </div>
-          <a
-            href="./programs.html"
-            class="px-6 py-3 flex items-center justify-center w-fit text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
-            >Browse All</a
-          >
         </div>
+        <a
+          href="./programs.html"
+          class="px-6 py-3 mt-12 flex items-center justify-center w-fit text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
+          >Browse All</a
+        >
       </div>
     </section>
 
@@ -1172,7 +1174,7 @@
         class="content container mx-auto flex flex-col items-center px-8 lg:px-40 xl:px-64 relative"
       >
         <h1 class="text-center text-3xl md:text-4xl font-bold mb-12">
-          Our <span class="text-indigo-600">Articles</span>
+          Our <span class="text-indigo-600">Posts</span>
         </h1>
 
         <div
@@ -1261,7 +1263,7 @@
         </div>
         <a
           href="./blogs.html"
-          class="px-6 py-3 mt-16 flex items-center justify-center w-fit text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
+          class="px-6 py-3 mt-12 flex items-center justify-center w-fit text-indigo-600 font-bold border border-indigo-600 rounded-full hover:bg-indigo-700 hover:text-white hover:border-indigo-700 hover:transition hover:duration"
           >Browse All</a
         >
       </div>
@@ -1422,71 +1424,74 @@
     </section>
 
     <section class="contact-section py-16">
-      <div
-        class="container mx-auto px-8 lg:px-40 xl:px-64 grid grid-cols-1 lg:grid-cols-2 gap-16"
-      >
-        <div class="contact-info left w-full flex flex-col gap-6">
-          <form class="flex flex-col gap-6 text-stone-800">
-            <input
-              type="text"
-              placeholder="Name"
-              class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            />
+      <div class="container mx-auto px-8 lg:px-40 xl:px-64">
+        <h1 class="text-center text-3xl md:text-4xl font-bold mb-12">
+          Contact <span class="text-indigo-600">Us</span>
+        </h1>
+        <div class="contact-grid grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div class="contact-info left w-full flex flex-col gap-6">
+            <form class="flex flex-col gap-6 text-stone-800">
+              <input
+                type="text"
+                placeholder="Name"
+                class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
 
-            <textarea
-              type="text"
-              placeholder="Message"
-              rows="4"
-              class="bg-blue-50 rounded-[2rem] py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            ></textarea>
-            <input
-              type="submit"
-              class="bg-indigo-600 rounded-full py-5 px-6 mt-4 text-white font-semibold cursor-pointer hover:bg-indigo-700 transition-colors duration-400"
-              value="Submit"
-            />
-          </form>
-        </div>
-        <div class="contact-info right rounded-lg flex flex-col gap-12">
-          <div class="info-item flex flex-col gap-4">
-            <h5 class="text-md text-stone-500">Location</h5>
-            <div class="w-full h-px bg-stone-200"></div>
-            <h3 class="text-2xl text-black font-semibold">
-              Pokhara, Kaski, Nepal
-            </h3>
+              <textarea
+                type="text"
+                placeholder="Message"
+                rows="4"
+                class="bg-blue-50 rounded-[2rem] py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              ></textarea>
+              <input
+                type="submit"
+                class="bg-indigo-600 rounded-full py-5 px-6 mt-4 text-white font-semibold cursor-pointer hover:bg-indigo-700 transition-colors duration-400"
+                value="Submit"
+              />
+            </form>
           </div>
-          <div class="info-item flex flex-col gap-4">
-            <h5 class="text-md text-stone-500">Academic Hours</h5>
-            <div class="w-full h-px bg-stone-200"></div>
-            <h3 class="text-2xl text-black font-semibold">
-              Sundary to Friday, <br />
-              10:00 AM to 4:00 PM
-            </h3>
-            <h5 class="text-md text-stone-500">
-              Hostel and administrative service may vary
-            </h5>
-          </div>
-          <div class="info-item flex flex-col gap-4">
-            <h5 class="text-md text-stone-500">Contact Info</h5>
-            <div class="w-full h-px bg-stone-200"></div>
-            <h3 class="text-2xl text-black font-semibold">
-              +977 XXX-XXX-XXX <br />
-            </h3>
-            <a
-              class="text-md text-stone-500 cursor-pointer hover:text-zinc-900"
-              target="_blank"
-            >
-              Say Hi at mail@gyankung.com
-            </a>
+          <div class="contact-info right rounded-lg flex flex-col gap-12">
+            <div class="info-item flex flex-col gap-4">
+              <h5 class="text-md text-stone-500">Location</h5>
+              <div class="w-full h-px bg-stone-200"></div>
+              <h3 class="text-2xl text-black font-semibold">
+                Pokhara, Kaski, Nepal
+              </h3>
+            </div>
+            <div class="info-item flex flex-col gap-4">
+              <h5 class="text-md text-stone-500">Academic Hours</h5>
+              <div class="w-full h-px bg-stone-200"></div>
+              <h3 class="text-2xl text-black font-semibold">
+                Sundary to Friday, <br />
+                10:00 AM to 4:00 PM
+              </h3>
+              <h5 class="text-md text-stone-500">
+                Hostel and administrative service may vary
+              </h5>
+            </div>
+            <div class="info-item flex flex-col gap-4">
+              <h5 class="text-md text-stone-500">Contact Info</h5>
+              <div class="w-full h-px bg-stone-200"></div>
+              <h3 class="text-2xl text-black font-semibold">
+                +977 XXX-XXX-XXX <br />
+              </h3>
+              <a
+                class="text-md text-stone-500 cursor-pointer hover:text-zinc-900"
+                target="_blank"
+              >
+                Say Hi at mail@gyankung.com
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1495,7 +1500,7 @@
     <footer class="footer-section bg-blue-50 mt-16">
       <div class="container mx-auto px-8 grid grid-cols-6 gap-24 py-24">
         <div
-          class="about w-fit col-span-5 lg:col-span-3 lg:w-9/12 flex flex-col gap-7"
+          class="about w-fit flex flex-col justify-start col-span-5 lg:col-span-3 lg:w-9/12 flex flex-col gap-7"
         >
           <a
             href="./index.html"
@@ -1505,25 +1510,17 @@
             <h2 class="text-2xl font-bold text-indigo-600">GSBS</h2>
           </a>
 
-          <p class="text-stone-500">
-            By submitting your email, you will receive latest news and
-            announcement that our platform offers in the future
+          <p class="text-stone-500 leading-relaxed">
+            Gyankung Secondary Boarding School is a school located in Pokhara,
+            Kaski, Nepal. It is one of the best schools in Pokhara. Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit.
           </p>
 
-          <div
-            class="newsletter flex rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent overflow-hidden"
+          <a
+            href="./about.html"
+            class="px-6 py-3 text-white font-semibold w-fit bg-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >About Us</a
           >
-            <input
-              type="text"
-              placeholder="Enter your email address"
-              class="bg-white px-4 py-3 w-full focus:outline-none"
-            />
-            <button
-              class="px-6 py-3 text-white font-semibold bg-indigo-600 border border-indigo-600 rounded-md hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
-            >
-              Subscribe
-            </button>
-          </div>
         </div>
 
         <div
@@ -1535,16 +1532,13 @@
               <a href="./index.html">Home</a>
             </li>
             <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Courses</a>
+              <a href="./about.html">About Us</a>
             </li>
             <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">About Us</a>
+              <a href="./blogs.html">Posts</a>
             </li>
             <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Contact</a>
-            </li>
-            <li class="text-stone-500 hover:font-bold">
-              <a href="./signup.html">Login / Register</a>
+              <a href="./contact.html">Contact US</a>
             </li>
           </ul>
         </div>
@@ -1555,19 +1549,16 @@
           <h3 class="font-bold">Others</h3>
           <ul class="links flex flex-col justify-end gap-3">
             <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Course Guide</a>
+              <a href="./events.html">Events</a>
             </li>
             <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">How it works?</a>
+              <a href="./notice.html">Notice</a>
             </li>
             <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Tutors</a>
+              <a href="./calendar.html">Calendar</a>
             </li>
             <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Testimonials</a>
-            </li>
-            <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Help?</a>
+              <a href="./gallery.html">Gallery</a>
             </li>
           </ul>
         </div>
@@ -1575,28 +1566,22 @@
         <div
           class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
         >
-          <h3 class="font-bold">Categories</h3>
+          <h3 class="font-bold">Contact Us</h3>
           <ul class="links flex flex-col gap-3">
-            <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Web Development</a>
+            <li class="text-stone-500 hover:font-semibold">
+              <a href="./index.html">+977 XXX-XXX-XXXX</a>
             </li>
-            <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Animation</a>
+            <li class="text-stone-500 hover:font-semibold">
+              <a href="./index.html">+977 XXX-XXX-XXXX</a>
             </li>
-            <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Video Editing</a>
-            </li>
-            <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Design & Research</a>
-            </li>
-            <li class="text-stone-500 hover:font-bold">
-              <a href="./index.html">Digital Marketing</a>
+            <li class="text-stone-500 hover:font-semibold">
+              <a href="./index.html">mail@gyankunj.com</a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="container mx-auto px-8 pb-16">
+      <div class="container mx-auto px-8">
         <div
           class="social-media w-full grid gap-8 grid-cols-4 px-8 py-6 bg-indigo-600 rounded-lg flex justify-between items-center"
         >
@@ -1628,6 +1613,17 @@
             </a>
           </div>
         </div>
+      </div>
+      <div class="container mx-auto px-8 py-8">
+        <p class="text-stone-500">
+          Powered by:
+          <a
+            href="https://www.rangin.com.np"
+            class="text-indigo-600 font-semibold hover:font-bold"
+            target="_blank"
+            >Rangin Technology</a
+          >
+        </p>
       </div>
     </footer>
 
