@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gyankunj</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar bg-white fixed z-20 left-0 right-0 top-0">
+      <div
+        class="container mx-auto px-8 lg:px-40 xl:px-64 flex justify-between items-center py-3"
+      >
+        <a
+          href="./index.html"
+          class="text-2xl font-bold flex items-center gap-1"
+        >
+          <img src="./assets/Gyankunj.png" class="h-12" alt="" />
+          <h2 class="text-2xl font-bold text-indigo-600">GSBS</h2>
+        </a>
+        <ul class="nav-links hidden lg:flex">
+          <li>
+            <a
+              href="./events.html"
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Events</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./notice.html"
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Notice</a
+            >
+          </li>
+          <li>
+            <a
+              href="./calendar.html"
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Calendar</a
+            >
+          </li>
+
+          <li>
+            <a
+              href="./blogs.html"
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Posts</a
+            >
+          </li>
+          <li>
+            <a
+              href="./gallery.html"
+              class="font-semibold px-4 py-2 rounded-md text-stone-500 hover:text-black hover:transition hover:duration"
+              >Gallery</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-ctas gap-2 font-semibold hidden lg:flex">
+          <a
+            href="./contact.html"
+            class="px-6 py-3 text-white bg-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >Contact</a
+          >
+        </div>
+
+        <button
+          id="hamburgerButton"
+          class="ham-btn flex flex-col justify-between items-end group gap-[4px] lg:hidden"
+        >
+          <!-- hamburger icon using tailwind  -->
+          <div
+            class="line-one w-8 h-1 bg-stone-400 rounded-full group-hover:bg-black"
+          ></div>
+          <div
+            class="line-two w-8 h-1 bg-stone-400 rounded-full group-hover:bg-black"
+          ></div>
+          <div
+            class="line-three w-4 h-1 bg-stone-400 rounded-full group-hover:bg-black"
+          ></div>
+        </button>
+      </div>
+      <div
+        class="ham-menu absolute hidden h-screen bg-white container mx-auto px-8 py-16 flex flex-col gap-2"
+      >
+        <ul class="ham-links flex flex-col gap-5 text-stone-400">
+          <li>
+            <a
+              href="./events.html"
+              class="text-3xl font-semibold hover:text-black"
+              >Events</a
+            >
+          </li>
+          <li>
+            <a
+              href="./notice.html"
+              class="text-3xl font-semibold hover:text-black"
+              >Notice</a
+            >
+          </li>
+          <li>
+            <a
+              href="./calendar.html"
+              class="text-3xl font-semibold hover:text-black"
+              >Calendar</a
+            >
+          </li>
+          <li>
+            <a
+              href="./blogs.html"
+              class="text-3xl font-semibold hover:text-black"
+              >Posts</a
+            >
+          </li>
+          <li>
+            <a
+              href="./gallery.html"
+              class="text-3xl font-semibold hover:text-black"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="text-3xl font-semibold hover:text-black"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              class="text-3xl font-semibold hover:text-black"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="admission-section pt-32 pb-16">
+      <div class="container mx-auto px-8 lg:px-40 xl:px-64 gap-8">
+        <h1 class="text-3xl md:text-4xl text-center font-bold mb-12">
+          Admission <span class="text-indigo-600">Form</span>
+        </h1>
+        <form class="form relative grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="form-item w-full flex flex-col gap-2 relative">
+            <label
+              for="name"
+              class="text-stone-400 text-sm p-1 bg-white absolute mt-[-0.8rem] ml-6 transition-all duration-300 ease-in-out"
+              >Student Name</label
+            >
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="name"
+              class="rounded-full py-5 px-6 border border-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+          <div class="form-item w-full flex flex-col gap-2 relative">
+            <label
+              for="name"
+              class="text-stone-400 text-sm p-1 bg-white absolute mt-[-0.8rem] ml-6 transition-all duration-300 ease-in-out"
+              >Address</label
+            >
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="rounded-full py-5 px-6 border border-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+          <div class="form-item w-full flex flex-col gap-2 relative">
+            <label
+              for="name"
+              class="text-stone-400 text-sm p-1 bg-white absolute mt-[-0.8rem] ml-6 transition-all duration-300 ease-in-out"
+              >Upload Student Image</label
+            >
+            <input
+              type="file"
+              placeholder="image"
+              class="text-stone-400 rounded-full py-5 px-6 border border-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div class="form-item w-full flex flex-col gap-2 relative">
+            <label
+              for="name"
+              class="text-stone-400 text-sm p-1 bg-white absolute mt-[-0.8rem] ml-6 transition-all duration-300 ease-in-out"
+              >Select Admission Class</label
+            >
+            <input
+              type="number"
+              placeholder="Class"
+              class="rounded-full py-5 px-6 border border-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div class="form-item w-full flex flex-col gap-2 relative">
+            <label
+              for="parent-name"
+              class="text-stone-400 text-sm p-1 bg-white absolute mt-[-0.8rem] ml-6 transition-all duration-300 ease-in-out"
+              >Parent's Name</label
+            >
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="parent-name"
+              class="rounded-full py-5 px-6 border border-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div class="form-item w-full flex flex-col gap-2 relative">
+            <label
+              for="parent-relation"
+              class="text-stone-400 text-sm p-1 bg-white absolute mt-[-0.8rem] ml-6 transition-all duration-300 ease-in-out"
+              >Student's Relation</label
+            >
+            <input
+              type="text"
+              placeholder="Eg: Father"
+              id="parent-relation"
+              class="rounded-full py-5 px-6 border border-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <input
+            type="submit"
+            class="bg-indigo-600 col-span-1 lg:col-span-2 rounded-full py-5 px-6 mt-4 text-white font-semibold cursor-pointer hover:bg-indigo-700 transition-colors duration-400"
+            value="Submit"
+          />
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-section py-16">
+      <div class="container mx-auto px-8 lg:px-40 xl:px-64">
+        <h1 class="text-center text-3xl md:text-4xl font-bold mb-12">
+          Contact <span class="text-indigo-600">Us</span>
+        </h1>
+        <div class="contact-grid grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div class="contact-info left w-full flex flex-col gap-6">
+            <form class="flex flex-col gap-6 text-stone-800">
+              <input
+                type="text"
+                placeholder="Name"
+                class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                class="bg-blue-50 rounded-full py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+
+              <textarea
+                type="text"
+                placeholder="Message"
+                rows="4"
+                class="bg-blue-50 rounded-[2rem] py-5 px-6 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              ></textarea>
+              <input
+                type="submit"
+                class="bg-indigo-600 rounded-full py-5 px-6 mt-4 text-white font-semibold cursor-pointer hover:bg-indigo-700 transition-colors duration-400"
+                value="Submit"
+              />
+            </form>
+          </div>
+          <div class="contact-info right rounded-lg flex flex-col gap-12">
+            <div class="info-item flex flex-col gap-4">
+              <h5 class="text-md text-stone-500">Location</h5>
+              <div class="w-full h-px bg-stone-200"></div>
+              <h3 class="text-2xl text-black font-semibold">
+                Pokhara, Kaski, Nepal
+              </h3>
+            </div>
+            <div class="info-item flex flex-col gap-4">
+              <h5 class="text-md text-stone-500">Academic Hours</h5>
+              <div class="w-full h-px bg-stone-200"></div>
+              <h3 class="text-2xl text-black font-semibold">
+                Sundary to Friday, <br />
+                10:00 AM to 4:00 PM
+              </h3>
+              <h5 class="text-md text-stone-500">
+                Hostel and administrative service may vary
+              </h5>
+            </div>
+            <div class="info-item flex flex-col gap-4">
+              <h5 class="text-md text-stone-500">Contact Info</h5>
+              <div class="w-full h-px bg-stone-200"></div>
+              <h3 class="text-2xl text-black font-semibold">
+                +977 XXX-XXX-XXX <br />
+              </h3>
+              <a
+                class="text-md text-stone-500 cursor-pointer hover:text-zinc-900"
+                target="_blank"
+              >
+                Say Hi at mail@gyankung.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section bg-blue-50 mt-16 flex flex-col gap-20">
+      <div class="container mx-auto px-8 grid grid-cols-6 gap-24 pt-24">
+        <div
+          class="about w-fit flex flex-col justify-start col-span-5 lg:col-span-3 lg:w-9/12 flex flex-col gap-7"
+        >
+          <a
+            href="./index.html"
+            class="text-2xl font-bold flex items-center gap-2"
+          >
+            <img src="./assets/Gyankunj.png" class="h-12" alt="" />
+            <h2 class="text-2xl font-bold text-indigo-600">GSBS</h2>
+          </a>
+
+          <p class="text-stone-500 leading-relaxed">
+            Gyankung Secondary Boarding School is a school located in Pokhara,
+            Kaski, Nepal. It is one of the best schools in Pokhara. Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit.
+          </p>
+
+          <a
+            href="./about.html"
+            class="px-6 py-3 text-white font-semibold w-fit bg-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-700 hover:border-indigo-700 hover:transition hover:duration"
+            >About Us</a
+          >
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Menu</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./about.html">About Us</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./blogs.html">Posts</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./contact.html">Contact US</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Others</h3>
+          <ul class="links flex flex-col justify-end gap-3">
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./events.html">Events</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./notice.html">Notice</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./calendar.html">Calendar</a>
+            </li>
+            <li class="text-stone-500 hover:font-bold">
+              <a href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="links w-fit col-span-6 md:col-span-2 lg:col-span-1 flex flex-col gap-7"
+        >
+          <h3 class="font-bold">Contact Us</h3>
+          <ul class="links flex flex-col gap-3">
+            <li class="text-stone-500 hover:font-semibold">
+              <a href="./index.html">+977 XXX-XXX-XXXX</a>
+            </li>
+            <li class="text-stone-500 hover:font-semibold">
+              <a href="./index.html">+977 XXX-XXX-XXXX</a>
+            </li>
+            <li class="text-stone-500 hover:font-semibold">
+              <a href="./index.html">mail@gyankunj.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container mx-auto px-8 pb-16">
+        <div
+          class="social-media w-full grid gap-8 grid-cols-4 px-8 py-6 bg-indigo-600 rounded-lg flex justify-between items-center"
+        >
+          <h4 class="text-white font-medium col-span-4 lg:col-span-3">
+            Copyright © Powered by
+            <a
+              href="https://www.rangin.com.np"
+              class="font-bold hover:underline"
+              target="_blank"
+              >Rangin Technology</a
+            >
+          </h4>
+
+          <div
+            class="social-icons col-span-4 lg:col-span-1 flex lg:justify-end gap-3"
+          >
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+              href=""
+              class="border border-white h-8 w-8 rounded-full flex justify-center items-center text-white hover:bg-white hover:text-indigo-600 hover:transition hover"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
